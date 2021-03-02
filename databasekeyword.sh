@@ -6,7 +6,7 @@ wp-config.php .htpasswd .env_DB_USERNAME .env_MAIL_HOST=smtp.gmail.com .git-cred
 a="1"
 b="100"
 while [[ a -le b  ]];do 
-        echo "echo \`cat htmlthing.txt | grep $KEYWORD{[$a]}\` >> html${KEYWORD[$a]}.txt";
+        echo "echo \`cat htmlthing.txt | grep ${KEYWORD[$a]}\` >> html${KEYWORD[$a]}.txt";
 c=$[$a+1]
 
 done
